@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de registro (Core)</title>
+</head>
+
+<body>
+    <h1>Crear una cuenta en Discord</h1>
+    <form action="/registro" method="post">
+        <br>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <br>
+        <div>
+            <label for="correo electronico">Correo electrónico:</label>
+            <input type="text" id="coreo electronico" name="correo electronico" required>
+        </div>
+        <br>
+        <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+        </div>
+        <br>
+        <div>
+            <label for="confirmar contraseña">Confrirmar contraseña:</label>
+            <input type="password" id="confirmar contraseña" name="confirmar contraseña" required>
+        </div>
+        <br>
+        <div>
+            <label for="fecha de nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+        </div>
+        <br>
+        <div>
+            <label for="genero">Género:</label>
+            <input type="radio" id="genero" name="genero" value="genero">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="Masculino" name="masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="femenino">
+            <label for="prefiero no decirlo">Prefiero no decirlo</label>
+        </div>
+        <br>
+        <div>
+            <label for="conentario">Descripción sobre tí:</label><br>
+            <textarea name="Descripcion sobre ti" id="Descripcion sobre ti"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="">Selecciona tus intereses:</label><br>
+            <select name="selecciona tus intereses" id="selecciona tus intereses">
+                <option value="musica">Música</option>
+                <option value="peliculas">Películas</option>
+                <option value="deportes">Deperotes</option>
+                <option value="tecnologia">Tecnología</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="acepto" name="acepto">
+            <label for="acepto">Al registrarte, aceptas los <a href="https://discord.com/terms">Términos y
+                    condiciones</a> de Discord.</label>
+        </div>
+        <br>
+        <div>
+            <label for=""></label>
+            <input type="submit" id="registrarse" value="Registrarse">
+        </div>
+</body>
+
+</html>
