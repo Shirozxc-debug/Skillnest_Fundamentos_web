@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 </head>
+
 <body>
-    <h1>¡Hola! Soy Matias Santelices</h1>
-
-    <p>
-        <a href="proyectos">Mis proyectos</a> |
-        <a href="https://github.com" target="_blank">Mi GitHub</a> |
-        <a href="#contacto">Contáctame</a>
-    </p>
-
-    <h2>Sobre mí</h2>
-    <p>Soy estudiante de programación y me encanta aprender nuevas tecnologías.</p>
-
-    <h2>Habilidades e intereses</h2>
-    <ul>
-        <li>Programación en Python</li>
-        <li>Desarrollo Web</li>
-        <li>Videojuegos</li>
-        <li>Diseño UX/UI</li>
-    </ul>
-
-    <h2 id="proyectos">Proyectos destacados</h2>
-    <h3>Calculadora en Python</h3>
+    <header>
+        <h1>¡Hola! Soy Matias Santelices</h1>
+        <p>
+            <span>
+                <a href="#">Mis proyectos</a> |
+            </span>
+            <span>
+                <a href="#" target="_blank">Mi GitHub</a> |
+            </span>
+            <span>
+                <a href="#">Contáctame</a>
+            </span>
+        </p>
+    </header>
+    <main>
+        <div>
+            <h2>Sobre mí</h2>
+            <p>Soy estudiante de programación y me encanta aprender nuevas tecnologías.</p>
+        </div>
+        <div>
+            <h2>Habilidades e intereses</h2>
+            <ul>
+                <li>Programación en Python</li>
+                <li>Desarrollo Web</li>
+                <li>Videojuegos</li>
+                <li>Diseño UX/UI</li>
+            </ul>
+        </div>
+        <div>
+            <h2 id="proyectos">Proyectos destacados</h2>
+            <h3>Calculadora en Python</h3>
             <p>Una calculadora simple creada con Python y ejecutada en consola.</p>
+        </div>
+        <div>
+            <h2 id="contacto">Contáctame</h2>
+            <form action="#">
+                <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                </div>
 
-    <h2 id="contacto">Contáctame</h2>
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        <br>
+                <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo">
+                </div>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo">
-        <br>
+                <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje"></textarea>
-        <br>
+                <div>
+                <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
 
-        <button type="submit">Enviar</button>
-    </form>
 </body>
+
 </html>
