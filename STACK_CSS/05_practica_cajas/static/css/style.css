@@ -1,0 +1,64 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.encabezado {
+    padding: 40px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.caja {
+    display: inline-block;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+    border: solid 1px blue;
+    overflow:  hidden;
+    box-shadow: 10px 10px 10px black;
+    margin: 25px;
+}
+.encabezado_caja {
+    padding:20px;
+    color: white;
+}
+
+.cuerpo_caja {
+    padding: 20px;
+    color: black
+}
+
+.azul {
+    background-color: rgb(35, 53, 216);
+}
+.rojo {
+    background-color: rgb(218, 30, 30);
+}
+
+.verde {
+    background-color: rgb(6, 131, 62);
+}
+
+.container {
+    text-align: center
+}
+
+.amarillo {
+    background-color: rgb(189, 201, 22);
+}
+
+.morado {
+    background-color: rgb(85, 13, 153);
+}
+
+.celeste {
+    background-color: rgb(32, 179, 184);
+}
