@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: center;
+    /*Alinear horizontalmente*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*Baja elementos que no caben en pantalla*/
+    /* Activa flexbox en este contenedor */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+}
+
+.item {
+    background-color: #00ade5;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.row {
+    flex-direction: row;
+    /*Direccion en filas */
+}
+
+.column {
+    flex-direction: column;
+    /*Direccion en columnas*/
+}
+
+.start {
+    justify-content: flex-start;
+    /*Alinear a la izquierda*/
+}
+
+.center {
+    justify-content: center;
+    /*Centrar elementos*/
+}
+
+.space-between {
+    justify-content: space-between;
+    /*Distribución de elementos perfectos*/
+}
+
+/* EJEMPLO SKILLNEST */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.contenedor {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+
+    /* Propiedades flexbox */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.elemento {
+    margin: 10px;
+    background-color: #00ade5;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
