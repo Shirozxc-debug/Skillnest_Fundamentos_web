@@ -74,12 +74,11 @@ body {
 }
 
 .boton-principal a {
-    transition: transform 0.3s ease, margin-left 0.3s ease;
+    transition: transform 0.3s ease,;
 }
 
 .boton-principal a:hover {
     transform: scale(1.2);
-    margin-left: 50px;
 }
 
 .boton-principal2 {

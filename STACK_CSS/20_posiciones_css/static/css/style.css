@@ -1,0 +1,70 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0.712);
+    /* Altura exagerada para ver scroll */
+    min-height: 150vh;
+    padding-bottom: 50px;
+}
+/* Posición fija (fixed)*/
+.barra-navegacion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.87);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Posición en capa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.685);
+}
+
+barra-navegacion h1{
+    font-size: 1.2rem;
+}
+
+.enlace-nav{
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.enlace-nav:hover{
+    color: aliceblue;
+}
+
+/* Contenedor Principal */
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap; /* Cuando los elementos no caben, bajan automáticamente */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px; /* Margen para que el contenido quede visible */
+}
+
+.targeta{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 5px 15px black;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.targeta:hover{
+    transform: translateY(-10px); /* Movimiento hacia arriba*/;
+    box-shadow: 0 15px 25px;
+}
