@@ -23,7 +23,6 @@ body{
     flex-direction: column;
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transition: transform 0.5s ease;
 }
 
 .ache2 {
@@ -40,14 +39,12 @@ color: rgba(0, 0, 0, 0.337);
 }
 
 .perfil-seccion:hover {
-    transform: scale(1.2);
     transform: translateY(-10px); /*movimiento hacia arriba */
     box-shadow: 0 15px 25px black;
 }
 .Contenedor-img{
     position: relative;
     height: 2px;
-
 }
 
 .Contenedor-img img{
@@ -69,9 +66,10 @@ color: rgba(0, 0, 0, 0.337);
     cursor: pointer;
     box-shadow: 0 4px 8px rgb(255, 255, 255);
     border: 2px solid white;
+    transition: transform 0.3s ease;
 }
-
-.perfil-presentation {
+.Contenedor-img img:hover {
+    transform: scale(1.1) /*movimiento hacia arriba */
 }
 
 .button-link {
