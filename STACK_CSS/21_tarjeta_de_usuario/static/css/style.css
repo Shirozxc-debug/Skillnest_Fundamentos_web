@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil-seccion {
+    text-align: center;
+    margin: 90px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 200px 200px;
+    padding: 80px 80px;
+    box-shadow: 0 5px 15px black;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease;
+}
+
+.ache2 {
+margin: 5px;
+color: rgba(0, 0, 0, 0.337);
+}
+
+.ache {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.p {
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.perfil-seccion:hover {
+    transform: scale(1.2);
+    transform: translateY(-10px); /*movimiento hacia arriba */
+    box-shadow: 0 15px 25px black;
+}
+.Contenedor-img{
+    position: relative;
+    height: 2px;
+
+}
+
+.Contenedor-img img{
+    position: absolute;
+    /* Se ancla exactamente a la esquina superior derecha de la 
+    ventana modal */
+    top: -210px;
+    right: 80px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    border: 2px solid white;
+}
+
+.perfil-presentation {
+}
+
+.button-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.conectar {
+display: flex;
+justify-content: center;
+}
+
+.button {
+    background-color: #3498DB;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
