@@ -66,7 +66,7 @@ function ejercicio2(){
 //  “Temperatura extrema”.
 
 function ejercicio3(){
-
+    let temperatura = 
 }
 
 // ✅ Ejercicio 4: Verificación de administrador
