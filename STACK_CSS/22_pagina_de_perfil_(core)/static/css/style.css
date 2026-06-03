@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ECF0F1;
+}
+
+.header {
+    color: white;
+    display: flex;
+    /* flex aplicado en header */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #2C3E50;
+}
+
+.barra-nav {
+    font-size: 40px;
+}
+
+.nav {
+    display: flex;
+    /*Flex aplicado en navBar */
+    align-items: center;
+    gap: 30px;
+    transition: color 0.4s ease;
+}
+
+.nav a:hover {
+    color: #3498DB;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    /*Quita borde por defecto */
+    cursor: pointer;
+    /*Añade una mano cuando mouse para encima */
+    border-radius: 6px;
+    transition: transform  0.3s ease;
+}
+.boton:hover {
+    transform: scale(1.2);
+}
+
+.contenedor-principal {
+    display:flex;
+}
+
+.tarjeta-perfil{
+    margin: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.397);
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-perfil:hover {
+    transform: scale(1.01);
+}
+
+
+.superior-azul{
+    background-color: #3498DB;
+    height: 140px;
+}
+
+.descripcion-tarjeta {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+    left: 10px;
+}
+
+.columna-izquierda {
+    display: flex;
+    flex: 2;
+}
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tarjeta-conexiones{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.452);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-conexiones:hover {
+    transform: scale(1.02);
+}
+
+.tarjeta-conexiones img {
+    width: 30px;
+}
+
+.p {
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.478);
+}
+
+.p1 { 
+    color: rgba(0, 0, 0, 0.793);
+}
+
+.ache1 {
+    color: rgba(0, 0, 0, 0.744);
+}
+
+.link-perfil {
+    margin: 6px;
+}
+
+.link-perfil a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform  0.3s ease;
+}
+
+.row:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    border: solid 1px #3498DB;
+    padding: 3px 7px;
+    color: #3498DB;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.caja{
+display: flex;
+align-items: center;
+gap:10px;
+}
+
+.botones{
+display: flex;
+align-items: center;
+}

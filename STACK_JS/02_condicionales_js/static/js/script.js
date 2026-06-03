@@ -15,18 +15,18 @@
 // parseInt() --> Transforma texto a número
 // prompt() --> Pide al usuario un valor
 
-function ejercicio1(){
-let nombre = prompt("Ingrese su nombre");
-let monto = parseInt(prompt("Ingrese el monto de compra: "))
-if (monto >= 50000) {
-    alert(`El monto con descuento es: ${monto - (monto / 0.2)}`)
-} else if (monto >= 30000) {
-    alert(`El monto con descuento es: ${monto - (monto / 0.1)}`)
-} else if (monto <= 30000 && monto > 0) {
-    alert(`El monto final es: ${monto}. Sin descuento`)
-} else {
-    alert("Ingrese valores válidos");
-}
+function ejercicio1() {
+    let nombre = prompt("Ingrese su nombre");
+    let monto = parseInt(prompt("Ingrese el monto de compra: "))
+    if (monto >= 50000) {
+        alert(`El monto con descuento es: ${monto - (monto / 0.2)}`)
+    } else if (monto >= 30000) {
+        alert(`El monto con descuento es: ${monto - (monto / 0.1)}`)
+    } else if (monto <= 30000 && monto > 0) {
+        alert(`El monto final es: ${monto}. Sin descuento`)
+    } else {
+        alert("Ingrese valores válidos");
+    }
 }
 
 // ✅ Ejercicio 2: Acceso a evento
@@ -41,17 +41,15 @@ if (monto >= 50000) {
 // “Acceso permitido”
 // o “Acceso denegado”
 
-function ejercicio2(){
-    let edad = parseInt(prompt("Ingrese su edad"))
-    let acompañado = prompt("¿Viene acompañado? si / no");
-    if (edad >= 18 && edad > 0) {
-        alert(`Acceso permitido`)
-    } else if (edad <= 17) {
-        alert(`Acceso denegado`)
-    } else if (edad >= 17 && acompañado == "si") {
-        alert(`Acceso permitido`) 
-    } else if (edad <= 17 && acompañado == "no") {
-        alert(`Acceso permitido`)
+function ejercicio2() {
+    let edad = parseInt(prompt("Ingrese su edad"));
+    let acompañado = prompt("¿Viene acompañado? (si / no)").toLowerCase();
+    if (edad >= 18) {
+        alert("Acceso permitido");
+    } else if (acompañado === "si") {
+        alert("Acceso permitido");
+    } else {
+        alert("Acceso denegado");
     }
 }
 
@@ -65,8 +63,17 @@ function ejercicio2(){
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
 
-function ejercicio3(){
-    let temperatura = 
+function ejercicio3() {
+    let temperatura = parseInt(prompt("Ingrese la temperatura actual:"));
+    if (temperatura < 10) {
+        alert("Hace frío");
+    } else if (temperatura >= 10 && temperatura <= 24) {
+        alert("Temperatura agradable")
+    } else if (temperatura >= 25) {
+        alert("Hace calor")
+    } if (temperatura > 35) {
+        alert("Temperatura extrema")
+    }
 }
 
 // ✅ Ejercicio 4: Verificación de administrador
@@ -82,8 +89,16 @@ function ejercicio3(){
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
 
-function ejercicio4(){
-
+function ejercicio4() {
+    let usuario = prompt("Ingrese su nombre de usuario:");
+    let contraseña = prompt("Ingrese su contraseña:");
+    if (usuario === "admin" && contraseña === "12345") {
+        alert("Bienvenido administrador");
+    } else if (usuario === "admin" && contraseña !== "12345") {
+        alert("Contraseña incorrecta");
+    } else {
+        alert("Usuario no encontrado");
+    }
 }
 
 // ✅ Ejercicio 5: Sistema de aprobación
@@ -102,8 +117,21 @@ function ejercicio4(){
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
 
-function ejercicio5(){
-
+function ejercicio5() {
+    let nombre = prompt("Ingrese el nombre del estudiante:");
+    let num1 = parseInt(prompt("Ingrese la nota 1"));
+    let num2 = parseInt(prompt("Ingrese la nota 2"));
+    let num3 = parseInt(prompt("Ingrese la nota 3"));
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    if (promedio >= 6) {
+        alert(`${nombre} - Aprobado con excelencia`);
+    } else if (promedio >= 4 && promedio <= 5.9) {
+        alert(`${nombre} - Aprobado`);
+    } else {
+        alert(`${nombre} - Reprobado`);
+    } if (nota1 < 2 || nota2 < 2 || nota3 < 2) {
+        alert("Atención: El estudiante tiene una nota menor a 2.0");
+    }
 }
 
 // 📌 Requisitos Técnicos
