@@ -122,10 +122,10 @@ function ejercicio5() {
     let num1 = parseInt(prompt("Ingrese la nota 1"));
     let num2 = parseInt(prompt("Ingrese la nota 2"));
     let num3 = parseInt(prompt("Ingrese la nota 3"));
-    let promedio = (nota1 + nota2 + nota3) / 3;
+    let promedio = (num1 + num2 + num3) / 3;
     if (promedio >= 6) {
         alert(`${nombre} - Aprobado con excelencia`);
-    } else if (promedio >= 4 && promedio <= 5.9) {
+    } else if (promedio >= 4.0 && promedio <= 5.9) {
         alert(`${nombre} - Aprobado`);
     } else {
         alert(`${nombre} - Reprobado`);
