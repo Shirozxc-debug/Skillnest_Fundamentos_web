@@ -129,7 +129,7 @@ function ejercicio5() {
         alert(`${nombre} - Aprobado`);
     } else {
         alert(`${nombre} - Reprobado`);
-    } if (nota1 < 2 || nota2 < 2 || nota3 < 2) {
+    } if (num1 < 2 || num2 < 2 || num3 < 2) {
         alert("Atención: El estudiante tiene una nota menor a 2.0");
     }
 }
