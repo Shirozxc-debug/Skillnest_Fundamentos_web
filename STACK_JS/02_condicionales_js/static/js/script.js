@@ -91,11 +91,11 @@ function ejercicio3() {
 
 function ejercicio4() {
     let usuario = prompt("Ingrese su nombre de usuario:");
-    let contraseña = prompt("Ingrese su contraseña:");
+    let contraseña = prompt("Ingrese su contrasena:");
     if (usuario === "admin" && contraseña === "12345") {
         alert("Bienvenido administrador");
     } else if (usuario === "admin" && contraseña !== "12345") {
-        alert("Contraseña incorrecta");
+        alert("Contrasena incorrecta");
     } else {
         alert("Usuario no encontrado");
     }
