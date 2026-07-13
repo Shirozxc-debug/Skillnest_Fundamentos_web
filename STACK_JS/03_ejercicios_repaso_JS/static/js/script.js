@@ -1,4 +1,4 @@
-
+console.log("Conexiòn exitosa con JS...")
 // # Tarea: Práctica de Condicionales en JavaScript (Parte 2)
 
 // ## Objetivo de Aprendizaje
