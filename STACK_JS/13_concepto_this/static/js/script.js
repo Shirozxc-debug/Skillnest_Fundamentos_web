@@ -1,9 +1,11 @@
 
-let boton = document.getElementById("cambiarTexto");
+let boton = document.getElementById("cambiarTexto")
+
 boton.addEventListener("click", function () {
-    if (this.innerText === "Click me") {
-        this.innerText = "Label Changed!";
+    let textoBoton = boton.textContent;
+    if (textoBoton === "Haz clic en mi") {
+        this.innerText = "¡Texto cambiado!";
     } else {
-        this.innerText = "Click me";
+        this.innerText = "Haz clic en mi";
     }
 });
