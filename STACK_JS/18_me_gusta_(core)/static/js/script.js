@@ -1,78 +1,29 @@
 console.log("Prueba de conexion JS...")
 
+var likesRei = 0;
+var likesAsuka = 0;
+var likesShinji = 0;
 
-let contador1 = 0;
-let contador2 = 0;
-let contador3 = 0;
+var rei = document.getElementById("rei");
+var btn_rei = document.getElementById("btn_rei");
 
-let rei = document.querySelector("#rei");
-let asuka = document.querySelector("#asuka");
-let shinji = document.querySelector("#shinji");
+rei.onclick = function () {
+    likesRei = likesRei + 1;
+    textoLikesRei.innerText = likesRei + " like(s)";
+};
 
-rei.addEventListener("click", function () {
-    if (rei !== null) {
-        contador1 = contador1 + 1
-        rei.textContent = `${contador1} Like(s)`
-    } else {
-        console.log("boton inexistente")
-    }
-})
+var asuka = document.getElementById("asuka");
+var btn_asuka = document.getElementById("btn_asuka");
 
-asuka.addEventListener("click", function () {
-    if (asuka !== null) {
-        contador2 = contador2 + 1
-        asuka.textContent = `${contador2} Like(s)`
-    } else {
-        console.log("boton inexistente")
-    }
-})
+asuka.onclick = function () {
+    shinji= likesAsuka + 1;
+    btn_shinji.innerText = likesAsuka + " like(s)";
+};
 
-shinji.addEventListener("click", function () {
-    if (shinji !== null) {
-        contador3 = contador3 + 1
-        shinji.textContent = `${contador3} Like(s)`
-    } else {
-        console.log("boton inexistente")
-    }
-})
+var textoLikesShinji = document.getElementById("shinji");
+var botonLikeShinji = document.getElementById("btn_shinji");
 
-let happyHappy = document.querySelector("#likeVillage")
-let paula = document.querySelector("#likePaula")
-let runaway = document.querySelector("#likeRunaway")
-
-
-
-// let contador1 = 0;
-// let contador2 = 0;
-// let contador3 = 0;
-
-// let likeHappy = document.querySelector("#likeVillageTexto");
-// let likePaula = document.querySelector("#likePaulaTexto");
-// let likeRunaway = document.querySelector("#likeRunawayTexto");
-
-// happyHappy.addEventListener("click", function () {
-//     if (happyHappy !== null) {
-//         contador1 = contador1 + 1
-//         likeHappy.textContent = ${contador1} Like(s)
-//     } else {
-//         console.log("boton inexistente")
-//     }
-// })
-
-// paula.addEventListener("click", function () {
-//     if (paula !== null) {
-//         contador2 = contador2 + 1
-//         likePaula.textContent = ${contador2} Like(s)
-//     } else {
-//         console.log("boton inexistente")
-//     }
-// })
-
-// runaway.addEventListener("click", function () {
-//     if (runaway !== null) {
-//         contador3 = contador3 + 1
-//         likeRunaway.textContent = ${contador3} Like(s)
-//     } else {
-//         console.log("boton inexistente")
-//     }
-// })
+shinji.onclick = function () {
+    likesShinji = likesShinji + 1;
+    textoLikesShinji.innerText = likesShinji + " like(s)";
+};
