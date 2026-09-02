@@ -1,24 +1,40 @@
-console.log("Prueba de conexión con js...");
+console.log("prueba de conexion JS")
+//Seleccion de span
+let rei = document.querySelector("#rei")
+let asuka = document.querySelector("#asuka")
+let shinji = document.querySelector("#shinji")
+console.log(rei);
+let contador1 = 0;
+let contador2 = 0;
+let contador3 = 0;
+//Seleccion de botones
+let like = document.querySelector("#btn-rei");
+let like1 = document.querySelector("#btn-asuka");
+let like2 = document.querySelector("#btn-shinji");
+console.log(like);
+like.addEventListener("click", function () {
+    if (like !== null) {
+        contador1 = contador1 + 1
+        rei.textContent = `${contador1} Like(s)`
+    } else {
+        console.log("boton inexistente")
+    }
+})
 
-let boton = document.getElementById("cambiarSesion");
+like1.addEventListener("click", function () {
+    if (paula !== null) {
+        contador2 = contador2 + 1
+        asuka.textContent =`${contador2} Like(s)`
+    } else {
+        console.log("boton inexistente")
+    }
+})
 
-boton.addEventListener("click", function () {
-  let textoBoton = boton.textContent;
-  if (textoBoton === "Iniciar sesión") {
-    this.innerText = "Cerrar sesión";
-  } else {
-    this.innerText = "Iniciar sesión";
-  }
-});
-
-// Alerta para el botón Ver perfil
-function mostrarAlerta() {
-  alert("Cargando el perfil del usuario...");
-}
-
-// Incrementar likes al hacer clic
-function aumentarLike(elemento) {
-  let cantidadLikes = parseInt(elemento.innerText);
-  cantidadLikes++;
-  elemento.innerText = cantidadLikes + " Me gusta";
-}
+like2.addEventListener("click", function () {
+    if (runaway !== null) {
+        contador3 = contador3 + 1
+        shinji.textContent = `${contador3} Like(s)`
+    } else {
+        console.log("boton inexistente")
+    }
+})

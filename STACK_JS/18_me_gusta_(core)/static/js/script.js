@@ -1,29 +1,42 @@
-console.log("Prueba de conexion JS...")
+console.log("prueba de conexion JS")
+//Seleccion de span
 
-var likesRei = 0;
-var likesAsuka = 0;
-var likesShinji = 0;
+let rei = document.querySelector("#rei")
+let asuka = document.querySelector("#asuka")
+let shinji = document.querySelector("#shinji")
 
-var rei = document.getElementById("rei");
-var btn_rei = document.getElementById("btn_rei");
+// seccion contador
+let contador1 = 0;
+let contador2 = 0;
+let contador3 = 0;
+//Seleccion de botones
+let like = document.querySelector("#btn-rei");
+let like1 = document.querySelector("#btn-asuka");
+let like2 = document.querySelector("#btn-shinji");
 
-rei.onclick = function () {
-    likesRei = likesRei + 1;
-    textoLikesRei.innerText = likesRei + " like(s)";
-};
+like.addEventListener("click", function () {
+    if (like !== null) {
+        contador1 = contador1 + 1
+        rei.textContent = `${contador1} Like(s)`
+    } else {
+        console.log("boton inexistente")
+    }
+})
 
-var asuka = document.getElementById("asuka");
-var btn_asuka = document.getElementById("btn_asuka");
+like1.addEventListener("click", function () {
+    if (asuka !== null) {
+        contador2 = contador2 + 1
+        asuka.textContent =`${contador2} Like(s)`
+    } else {
+        console.log("boton inexistente")
+    }
+})
 
-asuka.onclick = function () {
-    shinji= likesAsuka + 1;
-    btn_shinji.innerText = likesAsuka + " like(s)";
-};
-
-var textoLikesShinji = document.getElementById("shinji");
-var botonLikeShinji = document.getElementById("btn_shinji");
-
-shinji.onclick = function () {
-    likesShinji = likesShinji + 1;
-    textoLikesShinji.innerText = likesShinji + " like(s)";
-};
+like2.addEventListener("click", function () {
+    if (shinji !== null) {
+        contador3 = contador3 + 1
+        shinji.textContent = `${contador3} Like(s)`
+    } else {
+        console.log("boton inexistente")
+    }
+})
