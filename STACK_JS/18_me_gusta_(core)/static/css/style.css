@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #3F3F3F;
+    padding: 16px 28px;
+    margin-bottom: 26px;
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.perfil-seccion {
+    text-align: center;
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid black;
+    width: 200px;
+    height: 240px;
+    position: relative;
+    bottom:-8px;
+}
+
+.ache {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.p {
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.h2 {
+    margin-left: 20px;
+}
+
+.Contenedor-img img{
+    color: white;
+    width: 120px;
+    height: 110px;
+    margin-left: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+};
+
+.contenedor-izquierdo {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-like {
+    background-color: #FFD06B;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-likes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-perfil {
+    color: white;
+    background-color: #2B9DC0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;    
+}
+
+.encerrado {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 20px;
+    width: 740px;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+}
