@@ -1,4 +1,4 @@
-console.log("Prueba de concexion...");
+// console.log("Prueba de concexion...");
 
 const imagen = document.getElementById("image");
 
